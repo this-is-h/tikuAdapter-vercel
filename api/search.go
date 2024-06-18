@@ -5,7 +5,6 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
-	"github.com/vercel/go-bridge/go/bridge"
 )
 
 func Handler(w http.ResponseWriter, r *http.Request) {
@@ -18,7 +17,4 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 			"message": "Hello from Gin on Vercel!",
 		})
 	})
-
-	// 处理请求
-	bridge.ServeHTTP(router.ServeHTTP, w, r)
 }

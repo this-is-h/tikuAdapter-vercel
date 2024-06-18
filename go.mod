@@ -4,13 +4,9 @@ go 1.21
 
 toolchain go1.22.4
 
-require (
-	github.com/gin-gonic/gin v1.9.1
-	github.com/vercel/go-bridge v0.0.0-20221108222652-296f4c6bdb6d
-)
+require github.com/gin-gonic/gin v1.9.1
 
 require (
-	github.com/aws/aws-lambda-go v1.47.0 // indirect
 	github.com/bytedance/sonic v1.10.2 // indirect
 	github.com/chenzhuoyu/base64x v0.0.0-20230717121745-296ad89f973d // indirect
 	github.com/chenzhuoyu/iasm v0.9.0 // indirect
