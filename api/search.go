@@ -20,5 +20,5 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	})
 
 	// 处理请求
-	bridge.NewHandlerFunc(router.ServeHTTP).ServeHTTP(w, r)
+	bridge.ServeHTTP(router.ServeHTTP, w, r)
 }
